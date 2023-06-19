@@ -42,6 +42,7 @@ const authenticateJWT = (req, res, next) => {
   });
 };
 
+// Sign Up endpoint
 app.post("/signup", async (req, res) => {
 	const { email, password } = req.body;
 
@@ -73,6 +74,7 @@ app.post("/signup", async (req, res) => {
   }
 })
 
+// Login endpoint
 app.post("/login", async (req, res, _next) => {
 	const { email, password } = req.body;
 
