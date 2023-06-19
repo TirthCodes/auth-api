@@ -1,0 +1,28 @@
+### Sign Up User
+POST http://localhost:8080/signup HTTP/1.1
+content-type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "test@123"
+}
+
+### Login User
+POST http://localhost:8080/login HTTP/1.1
+content-type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "test@123"
+}
+
+### Logout User destroy session
+POST http://localhost:8080/logout HTTP/1.1
+
+### Protected route with session
+GET http://localhost:8080/protected-session HTTP/1.1
+
+### 
+GET http://localhost:8080/protected-jwt HTTP/1.1
+# token which you get on successful login
+Authorization: jwt-token
